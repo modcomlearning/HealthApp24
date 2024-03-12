@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Container Layout    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  Introduce Heading TextView       -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HEALTH APP"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_margin="20dp"/>
+
+            <!--  1st Horizontal Linear Layout to 2 Cards - Left and Right  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--  1st Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardabout"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/about"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="About"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--  2nd Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardcauses"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/causes"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="Causes"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!--  2nd Horizontal Linear Layout to 2 Cards - Left and Right  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--  1st Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardsymptoms"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/symptoms"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="Symptoms"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--  2nd Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardprevention"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/prevention"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="Prevention"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!--  3rd Horizontal Linear Layout to 2 Cards - Left and Right  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--  1st Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardtollfree"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/tollfree"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="Toll Free"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--  2nd Card-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardlocate"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--  Above  Linear Layout put ImageView and TextView Vertically -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:padding="25dp"
+                            android:src="@drawable/location"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:text="Locate"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
